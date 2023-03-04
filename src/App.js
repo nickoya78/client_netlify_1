@@ -3,9 +3,10 @@ import "./App.css";
 
 function App() {
   const [backendData, setBackendData] = useState([{}]);
+  const baseUrl = "https://astounding-hummingbird-9c01bf.netlify.app/";
 
   useEffect(() => {
-    fetch("/.netlify/functions/api")
+    fetch(`${baseUrl}/.netlify/functions/api`)
       .then((response) => response.json())
       .then((data) => {
         setBackendData(data);
