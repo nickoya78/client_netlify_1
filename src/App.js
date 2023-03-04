@@ -3,7 +3,7 @@ import "./App.css";
 
 function App() {
   const [backendData, setBackendData] = useState([{}]);
-  const baseUrl = "https://astounding-hummingbird-9c01bf.netlify.app/";
+  const baseUrl = "https://backend-express-severless-app.netlify.app/";
 
   useEffect(() => {
     fetch(`${baseUrl}/.netlify/functions/api`)
